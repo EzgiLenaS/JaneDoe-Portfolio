@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta name="author" content="EzgiLenaSz">
+        <link rel="stylesheet" href="portfolio_style.css">
+        <script src="portfolio_script.js"></script>
+    </head>
+    <body>
+        <section id="home">
+            <header>
+                Jane Doe
+                <br>
+                <img src="html_finalprojimages/envelope.png">
+                janedoe@gmail.com
+                <br> 
+                <img src="html_finalprojimages/phone.png">
+                05446769834
+            </header>
+            <nav>
+                <div class="topnav">
+                    <a href="#aboutme">About me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#recommendations">Recommendations</a>
+                </div>
+            </nav>
+        </section>
+        <div style="clear:both;"></div>
+        <section id="aboutme">
+            <fieldset>
+                <legend>About Me</legend>
+                <figure>
+                    <img src="html_finalprojimages/profile_photo.jpg" width="300px"/>
+                </figure>
+                <article>
+                    <h1>Hi! I am Jane Doe</h1>
+                    <p>I am a full stack developer with 2 years of experience in both 
+                        application and presentation layers. I have worked on applications 
+                        and microservices deployed on IBM Cloud. I am an avid user of IBM 
+                        Watson Services and have worked on Watson Assisstant, NLU, Sentiment 
+                        analyzer to name a few.
+                    </p>
+                </article>
+            </fieldset>
+        </section>
+        <div style="clear:both;"></div>
+        <section id="skills">
+            <fieldset>
+                <legend>Skills</legend>
+                <div class="all_skills">
+                    <div class="skill">
+                        <figure>
+                            <img src="html_finalprojimages/html5.png" width="30px" />
+                            <figcaption>HTML</figcaption>
+                        </figure>
+                        <p>2 years experience</p>
+                    </div>
+                    <div class="skill">
+                        <figure>
+                            <img src="html_finalprojimages/js.jpeg" width="30px" />
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                        <p>1.5 years experience</p>
+                    </div>
+                    <div class="skill">
+                        <figure>
+                            <img src="html_finalprojimages/java.png" width="30px" />
+                            <figcaption>Java</figcaption>
+                        </figure>
+                        <p>.5 years experience</p>
+                    </div>
+                    <div class="skill">
+                        <figure>
+                            <img src="html_finalprojimages/react.png" width="30px" />
+                            <figcaption>React</figcaption>
+                        </figure>
+                        <p>1 years experience</p>
+                    </div>
+                    <div class="skill">
+                        <figure>
+                            <img src="html_finalprojimages/node.png" width="30px" />
+                            <figcaption>Node.js</figcaption>
+                        </figure>
+                        <p>1 years experience</p>
+                    </div>
+                    <div class="skill">
+                        <figure>
+                            <img src="html_finalprojimages/CSS3.png" width="30px" />
+                            <figcaption>CSS</figcaption>
+                        </figure>
+                        <p>2 years experience</p>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+        <div style="clear:both;"></div>
+        <section id="projects">
+            <fieldset>
+                <legend>Projects</legend>
+                <div class="all_projects">
+                    <div class="project">
+                        <h5>Chatbot</h5>
+                        <ul>
+                            <li>Developed a secure website integrated with chatbot 
+                                for an automobile client using HTML, CSS, JavaScript, 
+                                and IBM Watson Assisstant
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="project">
+                        <h5>Sentiment Analyzer</h5>
+                        <ul>
+                            <li>Developed and deployed a sentiment analyzer for 
+                                box reviews section of an eCommerce platform using 
+                                IBM NLU
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="project">
+                        <h5>Fashion Website</h5>
+                        <ul>
+                            <li>Created a styled multi-page website for a new player 
+                                in the fashion industry and integrated it with a 
+                                shopping cart, using stripe for payment gateway
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+        <div style="clear:both;"></div>
+        <section id="recommendations">
+            <fieldset>
+                <legend>Recommendations</legend>
+                <div style="clear:both;"></div>
+                <div class="all_recommendations" id="all_recommendations">
+                    <div class="recommendation">
+                    <span>&#8220;</span>
+                    Jane is a very quick learner and quickly grasps key concepts of Web development. 
+                    She got a great attitude & she is an excellent team player. 
+                    She has a curious mind and asks the right question. 
+                    She takes initiative within a team and has potentials to lead the team.
+                    <span>&#8221;</span>
+                    </div>
+                    <div class="recommendation">
+                    <span>&#8220;</span>
+                    Working with Jane has been an awesome experience. 
+                    She is highly knowledgable and always goes the extra step to make sure everything is right. 
+                    For any future projects that need her expertise I would definitely want to work with her again.
+                    <span>&#8221;</span>
+                    </div>
+                    <div class="recommendation">
+                    <span>&#8220;</span>
+                    I had worked along with Jane during the initial phase of our venture which needed Web development. 
+                    She is a committed resource who has in depth knowledge about the domain. 
+                    She will be an asset for any organisation! 
+                    <span>&#8221;</span>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+        <!-- Recommendation Form -->
+        <section id="contact">
+            <div class="flex_center">
+                <h1>Leave a Recommendation</h1>          
+                <input type="text" placeholder="Name (Optional)"> <br/>
+                <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+                <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            </div>
+        </section>
+        <div style="clear:both;"></div>
+        <div id="go_home">
+            <a href="#home">
+                <img src="html_finalprojimages/home.png" width="20px"/>
+            </a>
+        </div>
+        <div class="popup" id="popup" class="flex_center">
+            <img src="html_finalprojimages/checkmark.png" width="20px"/>
+            <h3>Thanks for leaving a recommendation</h3>
+            <button onclick="showPopup(false)">Ok</button>
+        </div>
+        <footer>&#169; This Portfolio belongs to --ezgilena--</footer>
+    </body>
+</html>
